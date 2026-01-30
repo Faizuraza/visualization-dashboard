@@ -16,7 +16,7 @@ const Dashboard = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [showFilters, setShowFilters] = useState(true); // State for filter panel visibility
+    const [showFilters, setShowFilters] = useState(false); // State for filter panel visibility (hidden by default)
     const { filters } = useFilter();
 
     useEffect(() => {
