@@ -34,6 +34,11 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
+// Root route for testing
+app.get("/", (req, res) => {
+    res.json({ message: "Backend is running", routes: ["/api/insights", "/api/insights/filters"] });
+});
+
 app.use("/api/insights", require("./routes/insight.routes"));
 
 module.exports = app;

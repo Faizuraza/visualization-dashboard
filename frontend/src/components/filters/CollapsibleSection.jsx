@@ -4,14 +4,15 @@ const CollapsibleSection = ({ title, children, defaultOpen = false }) => {
   const [open, setOpen] = useState(defaultOpen);
 
   return (
-    <div className="border-b border-white/20 pb-2">
+    <div className="border-b border-white/10 pb-1.5">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex justify-between items-center text-left text-sm font-medium text-white py-2 hover:text-white/80 transition-colors"
+        className="w-full flex justify-between items-center text-left text-sm font-semibold text-white py-2 px-2 hover:bg-white/5 rounded transition-colors"
+        style={{ backgroundColor: 'transparent', border: 'none', outline: 'none' }}
       >
         <span>{title}</span>
         <svg
-          className={`w-5 h-5 transition-transform duration-300 ${open ? "rotate-180" : ""
+          className={`w-4 h-4 text-white transition-transform duration-200 ${open ? "rotate-180" : ""
             }`}
           fill="none"
           stroke="currentColor"
@@ -20,17 +21,17 @@ const CollapsibleSection = ({ title, children, defaultOpen = false }) => {
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
-            strokeWidth={2}
+            strokeWidth={2.5}
             d="M19 9l-7 7-7-7"
           />
         </svg>
       </button>
 
       <div
-        className={`collapsible-content ${open ? "max-h-96" : "max-h-0"}`}
+        className={`overflow-hidden transition-all duration-200 ${open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
       >
         {open && (
-          <div className="mt-2 space-y-1">
+          <div className="mt-2 space-y-1 px-2">
             {children}
           </div>
         )}

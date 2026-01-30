@@ -42,7 +42,7 @@ const Header = ({ onMenuClick }) => {
                             </svg>
                         </div>
                         <div>
-                            <h1 className="text-xl md:text-2xl font-display font-bold">
+                            <h1 className="text-xl md:text-2xl font-display font-bold text-white">
                                 Insights Dashboard
                             </h1>
                             <p className="text-xs text-white/80 hidden sm:block">

@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 @layer base {
-  body {
+  /* body {
     background: linear-gradient(to bottom right, #f8fafc, #eff6ff, #eef2ff);
     color: #1e293b;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     min-height: 100vh;
-  }
+  } */
 
   h1,
   h2,
@@ -109,23 +109,22 @@
   }
 
   /* Filter Panel */
-  .filter-panel {
+  /* .filter-panel {
     background: linear-gradient(to bottom right, #6366f1, #a855f7, #6366f1);
-    color: white;
     border-radius: 1rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   }
 
-  .filter-badge {
-    display: inline-flex;
+  */ .filter-badge {
+    /* display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0.25rem 0.5rem;
     font-size: 0.75rem;
-    font-weight: 700;
-    background: rgba(255, 255, 255, 0.2);
+    font-weight: 700; */
+    /* background: rgba(255, 255, 255, 0.2); */
     color: white;
-    border-radius: 9999px;
+     border-radius: 9999px;
     min-width: 1.5rem;
     height: 1.5rem;
   }

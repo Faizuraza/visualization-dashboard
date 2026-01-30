@@ -1,35 +1,34 @@
 import axios from "axios";
 
-// Use environment variable in production, fallback to localhost in development
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
-
 const API = axios.create({
-  baseURL: `${API_BASE_URL}/api`,
+  baseURL: "http://localhost:5000/api/insights",
 });
 
-export const fetchInsights = (params) =>
-  API.get("/insights", { params });
+// Filters
+export const fetchFilterValues = () =>
+  API.get("/filters");
 
+// Charts
 export const fetchIntensityByYear = (params) =>
-  API.get("/insights/intensity/year", { params });
+  API.get("/intensity/year", { params });
 
 export const fetchLikelihoodByCountry = (params) =>
-  API.get("/insights/likelihood/country", { params, });
-
-export const fetchRelevanceByTopic = (params) =>
-  API.get("/insights/relevance/topic", { params });
+  API.get("/likelihood/country", { params });
 
 export const fetchTopicDistribution = (params) =>
-  API.get("/insights/topics/distribution", { params });
+  API.get("/topics/distribution", { params });
 
-export const fetchRegionImpact = (params) =>
-  API.get("/insights/region/impact", { params });
 
 export const fetchRadarOverview = (params) =>
-  API.get("/insights/overview/radar", { params });
+  API.get("/overview/radar", { params });
 
+// Year comparison
 export const fetchYearComparison = (params) =>
-  API.get("/insights/year/comparison", { params });
+  API.get("/year/comparison", { params });
 
-export const fetchFilterValues = () =>
-  API.get("/insights/filters");
+
+export const fetchRelevanceByTopic = (params) =>
+  API.get("/relevance/topic", { params });
+
+export const fetchRegionImpact = (params) =>
+  API.get("/region/impact", { params });
