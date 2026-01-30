@@ -109,13 +109,14 @@
   }
 
   /* Filter Panel */
-  /* .filter-panel {
-    background: linear-gradient(to bottom right, #6366f1, #a855f7, #6366f1);
+  .filter-panel {
+    /* background: linear-gradient(to bottom right, #6366f1, #a855f7, #6366f1);
     border-radius: 1rem;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); */
+    color: white;
   }
 
-  */ .filter-badge {
+   .filter-badge {
     /* display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -153,6 +154,7 @@
     background: linear-gradient(to right, #6366f1, #a855f7, #6366f1);
     background-size: 200% 100%;
     animation: gradientShift 8s ease infinite;
+    color: white;
   }
 
   @keyframes gradientShift {

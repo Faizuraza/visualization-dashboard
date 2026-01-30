@@ -47,7 +47,7 @@ const FilterPanel = () => {
   );
 
   return (
-    <aside className="h-full w-full header-gradient flex flex-col">
+    <div className=" header-gradient filter-panel flex flex-col h-full w-64 lg:w-64 text-white shadow-2xl">
 
       {/* Header */}
       <div className="px-3 py-3 border-b border-white/10">
@@ -126,8 +126,7 @@ const FilterPanel = () => {
           Reset All
         </button>
       </div>
-
-    </aside>
+    </div>
   );
 };
 
