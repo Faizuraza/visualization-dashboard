@@ -79,9 +79,8 @@ const Dashboard = () => {
                 <div
                     className={`
                         fixed lg:sticky top-[73px] left-0 h-[calc(100vh-73px)] z-40
-                        ${showFilters ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
-                        ${showFilters ? 'w-64' : 'lg:w-0'}
                         transition-all duration-300 ease-in-out
+                        ${showFilters ? 'translate-x-0 w-64' : '-translate-x-full w-0'}
                         overflow-hidden
                     `}
                 >
