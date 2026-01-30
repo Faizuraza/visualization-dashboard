@@ -2,11 +2,11 @@ const Header = ({ onMenuClick }) => {
     return (
         <header className="header-gradient text-white shadow-2xl sticky top-0 z-30">
             <div className="px-4 md:px-6 py-4">
-                <div className="flex items-center justify-between">
-                    {/* Filter Toggle Button */}
+                <div className="relative flex items-center justify-center">
+                    {/* Filter Toggle Button - Absolute Left */}
                     <button
                         onClick={onMenuClick}
-                        className="p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
+                        className="absolute left-0 p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
                         aria-label="Toggle filters"
                     >
                         {/* Hamburger Menu Icon */}
@@ -16,19 +16,14 @@ const Header = ({ onMenuClick }) => {
                     </button>
 
                     {/* Logo & Title - Centered */}
-                    <div className="flex items-center gap-3 flex-1 justify-center">
-                        <div>
-                            <h1 className="text-xl md:text-2xl font-display font-bold text-white">
-                                Insights Dashboard
-                            </h1>
-                            <p className="text-xs text-white/80 text-center">
-                                Data Visualization & Analytics
-                            </p>
-                        </div>
+                    <div className="text-center">
+                        <h1 className="text-xl md:text-2xl font-display font-bold text-white">
+                            Insights Dashboard
+                        </h1>
+                        <p className="text-xs text-white/80">
+                            Data Visualization & Analytics
+                        </p>
                     </div>
-
-                    {/* Spacer to balance layout */}
-                    <div className="w-9"></div>
                 </div>
             </div>
         </header>

@@ -49,6 +49,7 @@ const FilterPanel = () => {
   return (
     <div className="header-gradient filter-panel flex flex-col h-full w-64 text-white shadow-2xl">
 
+
       {/* Header */}
       <div className="px-3 py-3 border-b border-white/10">
         <div className="flex items-center justify-between">
